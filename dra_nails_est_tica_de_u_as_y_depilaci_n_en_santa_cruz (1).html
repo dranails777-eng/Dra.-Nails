@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Nails | Manicura, Extensiones y Depilación en Santa Cruz, Bolivia</title>
+  <meta name="description" content="Transforma tus manos y piel en Dra. Nails. Especialistas en manicura en gel, uñas acrílicas, Polygel, Gelly Tips y depilación con cera en Santa Cruz, Bolivia. Agenda por WhatsApp.">
+  
+  <!-- SEO JSON-LD ESTRUCTURADO (BeautySalon / LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Dra. Nails",
+    "description": "Estudio especializado en Manicura y Pedicura Tradicional y en Gel, Extensiones de uñas acrílicas, Polygel, Gelly Tips y Depilación con cera en Santa Cruz, Bolivia.",
+    "telephone": "+59162662710",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santa Cruz de la Sierra",
+      "addressCountry": "BO"
+    },
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Manicura y Pedicura Tradicional y en Gel"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Extensiones de uñas acrílicas, Polygel y Gelly Tips"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación con cera de Piernas, Axilas, Bozo y Cejas"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       1. TOKENS DE DISEÑO Y VARIABLES GLOBALES (Sector: Moda, Belleza & Lujo)
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Tríada cromática de alta elegancia y contraste accesible WCAG AA (> 4.5:1) */
+      --primary: #18181b;          /* Negro Carbón Sofisticado */
+      --accent: #b45309;           /* Dorado Ocre / Bronce de Alto Contraste */
+      --accent-hover: #92400e;
+      --whatsapp: #15803d;         /* Verde Esmeralda Conversión (Contraste > 5.1:1 con blanco) */
+      --whatsapp-hover: #166534;
+      --bg: #fafaf9;               /* Marfil Cálido / Alabastro */
+      --surface: #ffffff;          /* Blanco Puro para Tarjetas */
+      --surface-alt: #f5f5f4;      /* Piedra Suave para Secciones Secundarias */
+      --text: #18181b;             /* Texto Principal */
+      --text-muted: #52525b;       /* Texto Secundario */
+      --border: #e4e4e7;           /* Bordes Sutiles */
+      --gold-soft: #fef3c7;        /* Acento Suave para Badges */
+
+      /* Escala Tipográfica Fluida (clamp) */
+      --font-h1: clamp(2rem, 2.2vw + 1.4rem, 3.5rem);
+      --font-h2: clamp(1.5rem, 1.4vw + 1.15rem, 2.4rem);
+      --font-h3: clamp(1.15rem, 0.6vw + 1rem, 1.4rem);
+      --font-body: clamp(1rem, 0.25vw + 0.95rem, 1.125rem);
+      
+      /* Espaciado Vertical y Grillas */
+      --space-section: clamp(3rem, 5vw + 1.5rem, 5.5rem);
+      --gutter: clamp(1rem, 2.5vw + 0.5rem, 2rem);
+      --radius-md: 0.75rem;
+      --radius-lg: 1.25rem;
+      --radius-pill: 9999px;
+
+      /* Elevación y Transiciones */
+      --shadow-sm: 0 2px 6px rgba(24, 24, 27, 0.05);
+      --shadow-md: 0 10px 25px -5px rgba(24, 24, 27, 0.08), 0 4px 10px -2px rgba(24, 24, 27, 0.04);
+      --shadow-lg: 0 20px 35px -10px rgba(24, 24, 27, 0.14);
+      --transition: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      font-size: var(--font-body);
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    /* ==========================================================================
+       2. TIPOGRAFÍA Y UTILIDADES DE ESTRUCTURA
+       ========================================================================== */
+    h1, h2, h3 {
+      line-height: 1.18;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--primary);
+    }
+
+    h1 { font-size: var(--font-h1); }
+    h2 { font-size: var(--font-h2); }
+    h3 { font-size: var(--font-h3); font-weight: 700; }
+
+    .container {
+      width: min(100% - (var(--gutter) * 1.5), 1140px);
+      margin-inline: auto;
+    }
+
+    section {
+      padding-block: var(--space-section);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin-inline: auto;
+      margin-block-end: clamp(2rem, 3vw, 3rem);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background-color: var(--gold-soft);
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-pill);
+      margin-block-end: 0.85rem;
+    }
+
+    /* ==========================================================================
+       3. CABECERA STICKY DE CONVERSIÓN RÁPIDA
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(250, 250, 249, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding-block: 0.75rem;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      background: var(--primary);
+      color: #ffffff;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       4. BOTONES Y CONTROLES TÁCTILES ACCESIBLES (WCAG AA >= 48x48px)
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      min-height: 50px;
+      min-width: 48px;
+      padding: 0.8rem 1.65rem;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform var(--transition), background-color var(--transition), box-shadow var(--transition);
+      text-align: center;
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .btn-whatsapp {
+      background-color: var(--whatsapp);
+      color: #ffffff;
+      box-shadow: 0 8px 20px -4px rgba(21, 128, 61, 0.4);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: var(--whatsapp-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -4px rgba(21, 128, 61, 0.5);
+    }
+
+    .btn-outline {
+      background-color: var(--surface);
+      color: var(--primary);
+      border-color: var(--border);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      background-color: var(--surface-alt);
+    }
+
+    .btn-sm {
+      min-height: 44px;
+      padding: 0.55rem 1.15rem;
+      font-size: 0.92rem;
+    }
+
+    /* ==========================================================================
+       5. SECCIÓN HERO (PASOS 1, 2 Y 3 DEL EMBUDO DE VENTAS)
+       1. Título Persuasivo | 2. Visual Persuasivo (LCP Optimizado) | 3. CTA WhatsApp
+       ========================================================================== */
+    .hero {
+      padding-block: clamp(2.5rem, 4.5vw, 4.5rem);
+      background: radial-gradient(circle at top right, #fef3c7 0%, transparent 45%), var(--bg);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2rem, 4vw, 3.5rem);
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero-title {
+      margin-block-end: 1.15rem;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.05rem, 0.5vw + 0.98rem, 1.25rem);
+      color: var(--text-muted);
+      margin-block-end: 1.75rem;
+      max-width: 58ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 100%;
+      margin-block-end: 1.75rem;
+    }
+
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      width: 100%;
+    }
+
+    .trust-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* Paso 2: Escaparate Visual Persuasivo (Dimensiones explícitas para CLS = 0) */
+    .hero-showcase {
+      position: relative;
+      background: var(--primary);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4 / 4.3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .showcase-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fde68a;
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.82rem;
+      font-weight: 700;
+      align-self: flex-start;
+    }
+
+    .showcase-art {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      margin-block: auto;
+    }
+
+    .showcase-footer {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .showcase-footer p {
+      font-size: 0.9rem;
+      line-height: 1.35;
+      color: #f4f4f5;
+    }
+
+    /* ==========================================================================
+       6. BENEFICIOS Y CATÁLOGO DE SERVICIOS (PASO 4 DEL EMBUDO)
+       Con Container Queries y Selector Interactivo de Servicio para WhatsApp
+       ========================================================================== */
+    .services-section {
+      background-color: var(--surface);
+      border-block: 1px solid var(--border);
+    }
+
+    .grid-auto {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr));
+      gap: var(--gutter);
+    }
+
+    .card-container {
+      container-type: inline-size;
+      container-name: service-card;
+    }
+
+    .service-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--gold-soft);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      margin-block-end: 1rem;
+    }
+
+    .service-list {
+      list-style: none;
+      margin-block-start: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .service-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.96rem;
+      color: var(--text-muted);
+    }
+
+    .service-list li svg {
+      color: var(--whatsapp);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+
+    /* ==========================================================================
+       7. POR QUÉ ELEGIR DRA. NAILS (BENEFICIOS TANGIBLES)
+       ========================================================================== */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+      gap: 1.5rem;
+    }
+
+    .benefit-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .benefit-box h3 {
+      margin-block: 0.65rem 0.4rem;
+      font-size: 1.12rem;
+    }
+
+    .benefit-box p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       8. TESTIMONIOS Y PRUEBA SOCIAL (PASO 5 DEL EMBUDO)
+       ========================================================================== */
+    .testimonials-section {
+      background-color: var(--surface-alt);
+      border-block: 1px solid var(--border);
+    }
+
+    .testimonial-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    .stars {
+      color: #d97706;
+      letter-spacing: 0.1em;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+
+    .author-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 700;
+      display: grid;
+      place-items: center;
+      font-size: 0.9rem;
+    }
+
+    /* ==========================================================================
+       9. PREGUNTAS FRECUENTES (ACORDEÓN ACCESIBLE)
+       ========================================================================== */
+    .faq-list {
+      max-width: 780px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .faq-btn {
+      width: 100%;
+      min-height: 54px;
+      padding: 1rem 1.35rem;
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      text-align: left;
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary);
+      cursor: pointer;
+    }
+
+    .faq-btn:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: -3px;
+    }
+
+    .faq-panel {
+      padding: 0 1.35rem 1.25rem;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      border-top: 1px solid var(--surface-alt);
+    }
+
+    /* ==========================================================================
+       10. CIERRE DE CONVERSIÓN PERSONALIZADO (PASO 6 DEL EMBUDO)
+       ========================================================================== */
+    .cta-final {
+      background: var(--primary);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 4vw, 3.5rem);
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-final h2 {
+      color: #ffffff;
+      margin-block-end: 0.85rem;
+    }
+
+    .cta-final p {
+      color: #d4d4d8;
+      max-width: 580px;
+      margin-inline: auto;
+      margin-block-end: 2rem;
+    }
+
+    /* Selector Rápido de Cita (Sin fricción) */
+    .quick-booking {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      max-width: 620px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-align: left;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (min-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .field-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #f4f4f5;
+      margin-block-end: 0.4rem;
+    }
+
+    .field-control {
+      width: 100%;
+      min-height: 48px;
+      padding: 0.65rem 0.95rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: #ffffff;
+      color: var(--primary);
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .field-control:focus-visible {
+      outline: 3px solid var(--gold-soft);
+      outline-offset: 2px;
+    }
+
+    /* ==========================================================================
+       11. FOOTER Y BOTÓN FLOTANTE DE WHATSAPP
+       ========================================================================== */
+    .site-footer {
+      padding-block: 2.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .floating-wa {
+      position: fixed;
+      inset-block-end: 1.25rem;
+      inset-inline-end: 1.25rem;
+      z-index: 90;
+      min-height: 56px;
+      padding: 0.75rem 1.25rem;
+      border-radius: var(--radius-pill);
+      background: var(--whatsapp);
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      box-shadow: 0 10px 25px rgba(21, 128, 61, 0.45);
+      transition: transform var(--transition);
+    }
+
+    .floating-wa:hover {
+      transform: scale(1.04);
+      background: var(--whatsapp-hover);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABECERA DE NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Inicio Dra. Nails">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L14.8 8.8L22 9.5L16.5 14.2L18.2 21.3L12 17.5L5.8 21.3L7.5 14.2L2 9.5L9.2 8.8L12 2Z"/>
+          </svg>
+        </span>
+        <span>Dra. Nails</span>
+      </a>
+
+      <a href="https://wa.me/59162662710?text=Hola%20Dra.%20Nails%2C%20quisiera%20agendar%20una%20cita%20en%20Santa%20Cruz."
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn btn-whatsapp btn-sm"
+         aria-label="Agendar cita por WhatsApp ahora">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>Agendar Cita</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         PASO 1, 2 Y 3: HERO SECTION DE ALTA CONVERSIÓN
+         ======================================================================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Estudio Especializado en Santa Cruz, Bolivia</span>
+          
+          <!-- Paso 1: Título Persuasivo -->
+          <h1 id="hero-heading" class="hero-title">
+            Luce manos impecables y una piel suave con acabado <span>profesional y duradero</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            En <strong>Dra. Nails</strong> cuidamos cada detalle de tu belleza: especialistas en manicura y pedicura en gel, extensiones esculpidas (Acrílicas, Polygel, Gelly Tips) y depilación con cera delicada para tu piel.
+          </p>
+
+          <!-- Paso 3: Call to Action Principal a WhatsApp -->
+          <div class="hero-actions">
+            <a href="https://wa.me/59162662710?text=Hola%20Dra.%20Nails%2C%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20y%20reservar%20una%20cita."
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-whatsapp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>¡Reservar Cita por WhatsApp!</span>
+            </a>
+
+            <a href="#servicios" class="btn btn-outline">
+              Ver Tratamientos
+            </a>
+          </div>
+
+          <div class="trust-strip">
+            <span class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Materiales 100% Esterilizados
+            </span>
+            <span class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Atención Personalizada
+            </span>
+            <span class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Santa Cruz, Bolivia
+            </span>
+          </div>
+        </div>
+
+        <!-- Paso 2: Elemento Visual Persuasivo (SVG Vectorial de Alta Precisión - LCP Inmediato) -->
+        <div class="hero-showcase" role="img" aria-label="Ilustración de servicios de estética de uñas y depilación en Dra. Nails">
+          <span class="showcase-badge">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Especialistas en Estética Integral
+          </span>
+
+          <svg class="showcase-art" width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" fetchpriority="high">
+            <!-- Halo dorado decorativo -->
+            <circle cx="200" cy="125" r="95" fill="url(#goldGlow)" opacity="0.22"/>
+            <!-- Silueta estilizada de frasco de esmalte gel y destellos -->
+            <rect x="165" y="95" width="70" height="95" rx="16" fill="#ffffff" fill-opacity="0.95"/>
+            <rect x="182" y="42" width="36" height="53" rx="6" fill="#d97706"/>
+            <rect x="175" y="122" width="50" height="42" rx="8" fill="#fef3c7"/>
+            <path d="M190 143L197 150L212 135" stroke="#b45309" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Destellos de brillo -->
+            <path d="M115 70L119 82L131 86L119 90L115 102L111 90L99 86L111 82L115 70Z" fill="#fde68a"/>
+            <path d="M285 110L288 119L297 122L288 125L285 134L282 125L273 122L282 119L285 110Z" fill="#fde68a"/>
+            <circle cx="275" cy="65" r="5" fill="#d97706"/>
+            <circle cx="122" cy="165" r="4" fill="#d97706"/>
+            <defs>
+              <radialGradient id="goldGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(200 125) scale(95)">
+                <stop stop-color="#F59E0B"/>
+                <stop offset="1" stop-color="#18181B" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+          </svg>
+
+          <div class="showcase-footer">
+            <p><strong>Agenda sin esperas:</strong> Elige tu tratamiento y coordina tu horario directo por WhatsApp.</p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fde68a" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PASO 4: CATÁLOGO DE SERVICIOS Y BENEFICIOS DEL SERVICIO
+         ======================================================================== -->
+    <section id="servicios" class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Nuestros Tratamientos</span>
+          <h2 id="services-heading">Servicios diseñados para realzar tu belleza natural</h2>
+          <p style="color: var(--text-muted); margin-top: 0.75rem;">
+            Selecciona el servicio que deseas y solicita disponibilidad o cotización al instante por WhatsApp.
+          </p>
+        </div>
+
+        <div class="grid-auto">
+          <!-- Servicio 1: Manicura y Pedicura -->
+          <div class="card-container">
+            <article class="service-card">
+              <div>
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                  </svg>
+                </div>
+                <h3>Manicura y Pedicura</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem;">
+                  Limpieza profunda, hidratación y esmaltado de precisión para manos y pies saludables.
+                </p>
+                <ul class="service-list">
+                  <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Manicura y Pedicura Tradicional:</strong> Corte, limado, cutícula y esmaltado clásico.</span>
+                  </li>
+                  <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Esmaltado en Gel:</strong> Brillo espejo inmediato y resistencia prolongada sin descascararse.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="https://wa.me/59162662710?text=Hola%20Dra.%20Nails%2C%20me%20interesa%20agendar%20Manicura%20y%20Pedicura%20(Tradicional%20o%20en%20Gel)."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn-whatsapp btn-sm">
+                Consultar Manicura / Pedicura
+              </a>
+            </article>
+          </div>
+
+          <!-- Servicio 2: Extensiones de Uñas -->
+          <div class="card-container">
+            <article class="service-card">
+              <div>
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <h3>Extensiones de Uñas</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem;">
+                  Largo, estructura y diseño a medida con técnicas modernas que cuidan tu uña natural.
+                </p>
+                <ul class="service-list">
+                  <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Uñas Acrílicas:</strong> Máxima resistencia y estructura esculpida personalizada.</span>
+                  </li>
+                  <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Polygel:</strong> Combinación ligera, flexible y sin olor fuerte con acabado natural.</span>
+                  </li>
+                  <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Gelly Tips:</strong> Extensiones de gel suave de aplicación rápida y aspecto ultra estético.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="https://wa.me/59162662710?text=Hola%20Dra.%20Nails%2C%20quisiera%20informaci%C3%B3n%20sobre%20Extensiones%20de%20U%C3%B1as%20(Acr%C3%ADlicas%2C%20Polygel%20o%20Gelly%20Tips)."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn-whatsapp btn-sm">
+                Consultar Extensiones
+              </a>
+            </article>
+          </div>
+
+          <!-- Servicio 3: Depilación con Cera -->
+          <div class="card-container">
+            <article class="service-card">
+              <div>
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
+                </div>
+                <h3>Depilación con Cera</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem;">
+                  Técnica higiénica y cuidadosa para dejar tu piel lisa, suave y libre de irritaciones.
+                </p>
+                <ul class="service-list">
+                  <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Piernas y Axilas:</strong> Extracción efectiva desde la raíz para suavidad prolongada.</span>
+                  </li>
+                  <li>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span><strong>Bozo y Cejas:</strong> Definición facial precisa y delicada para pieles sensibles.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <a href="https://wa.me/59162662710?text=Hola%20Dra.%20Nails%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20de%20Depilaci%C3%B3n%20con%20cera."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="btn btn-whatsapp btn-sm">
+                Consultar Depilación
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Beneficios Diferenciales -->
+        <div class="benefits-grid" style="margin-top: 2.5rem;">
+          <div class="benefit-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h3>Higiene y Bioseguridad</h3>
+            <p>Protocolos estrictos de esterilización y materiales desechables en cada atención.</p>
+          </div>
+          <div class="benefit-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <h3>Cuidado de tu Uña Natural</h3>
+            <p>Preparación respetuosa y retiro seguro sin debilitar ni maltratar tus uñas.</p>
+          </div>
+          <div class="benefit-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b45309" stroke-width="2.2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <h3>Reserva Ágil por WhatsApp</h3>
+            <p>Confirma tu turno directamente sin formularios largos ni llamadas en espera.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PASO 5: TESTIMONIOS DE CLIENTAS
+         ======================================================================== -->
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Experiencias Reales</span>
+          <h2 id="testimonials-heading">Lo que dicen nuestras clientas en Santa Cruz</h2>
+        </div>
+
+        <div class="grid-auto">
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="Calificación de 5 estrellas">★★★★★</div>
+              <p class="testimonial-text" style="margin-top: 0.75rem;">
+                "Me hice uñas en Polygel y quedaron súper naturales y resistentes. La atención en Dra. Nails es impecable y se nota el cuidado con cada detalle."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">CM</div>
+              <div>
+                <strong>Camila M.</strong>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Servicio: Polygel &amp; Manicura</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="Calificación de 5 estrellas">★★★★★</div>
+              <p class="testimonial-text" style="margin-top: 0.75rem;">
+                "Excelente servicio de pedicura en gel y depilación de cejas y bozo. Súper delicadas con la piel y muy puntuales con el horario agendado."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">VR</div>
+              <div>
+                <strong>Valeria R.</strong>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Servicio: Pedicura Gel &amp; Depilación</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="stars" aria-label="Calificación de 5 estrellas">★★★★★</div>
+              <p class="testimonial-text" style="margin-top: 0.75rem;">
+                "Probé los Gelly Tips por primera vez y me encantaron. Rápido, prolijo y con un brillo espectacular que me duró semanas intacto."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">AS</div>
+              <div>
+                <strong>Andrea S.</strong>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Servicio: Gelly Tips</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PREGUNTAS FRECUENTES (ACORDEÓN ACCESIBLE)
+         ======================================================================== -->
+    <section aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Resolvemos tus dudas</span>
+          <h2 id="faq-heading">Preguntas Frecuentes</h2>
+        </div>
+
+        <div class="faq-list" id="faq-accordion">
+          <div class="faq-item">
+            <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-1">
+              <span>¿Cuál es la diferencia entre Acrílico, Polygel y Gelly Tips?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div id="faq-1" class="faq-panel" hidden>
+              Las <strong>uñas acrílicas</strong> ofrecen máxima dureza y estructura para largos pronunciados; el <strong>Polygel</strong> combina la resistencia del acrílico con la ligereza y flexibilidad del gel; y los <strong>Gelly Tips</strong> son extensiones pre-moldeadas de gel suave de aplicación más rápida y aspecto muy natural. Te asesoramos según el estado de tus uñas.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-2">
+              <span>¿Cuánto tiempo dura el esmaltado en gel o las extensiones?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div id="faq-2" class="faq-panel" hidden>
+              El esmaltado en gel mantiene su brillo y adherencia entre 2 y 3 semanas. Las extensiones en acrílico o Polygel se recomiendan mantener con retoque cada 3 semanas según el crecimiento natural de tu uña.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-btn" aria-expanded="false" aria-controls="faq-3">
+              <span>¿Cómo reservo mi turno en Dra. Nails?</span>
+              <span aria-hidden="true">+</span>
+            </button>
+            <div id="faq-3" class="faq-panel" hidden>
+              Solo debes hacer clic en cualquiera de nuestros botones de WhatsApp, indicarnos qué servicio deseas (manicura, pedicura, extensiones o depilación) y coordinaremos el día y hora ideal para ti en Santa Cruz.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PASO 6: CALL TO ACTION FINAL CON GENERADOR DE MENSAJE WHATSAPP
+         ======================================================================== -->
+    <section aria-labelledby="cta-final-heading">
+      <div class="container">
+        <div class="cta-final">
+          <span class="eyebrow" style="background: rgba(254, 243, 199, 0.16); color: #fde68a;">Atención en Santa Cruz, Bolivia</span>
+          <h2 id="cta-final-heading">¿Lista para consentir tus manos y tu piel?</h2>
+          <p>
+            Personaliza tu consulta en segundos y envíala directamente a nuestro WhatsApp para confirmar tu horario.
+          </p>
+
+          <form id="whatsapp-booking-form" class="quick-booking" novalidate>
+            <div class="form-row">
+              <div class="field-group">
+                <label for="client-name">Tu Nombre</label>
+                <input type="text" id="client-name" class="field-control" placeholder="Ej. María Gómez" maxlength="60">
+              </div>
+
+              <div class="field-group">
+                <label for="service-select">Servicio de Interés</label>
+                <select id="service-select" class="field-control">
+                  <option value="Manicura y Pedicura en Gel">Manicura y Pedicura en Gel</option>
+                  <option value="Manicura y Pedicura Tradicional">Manicura y Pedicura Tradicional</option>
+                  <option value="Extensiones de Uñas Acrílicas">Extensiones de Uñas Acrílicas</option>
+                  <option value="Extensiones en Polygel">Extensiones en Polygel</option>
+                  <option value="Extensiones Gelly Tips">Extensiones Gelly Tips</option>
+                  <option value="Depilación con cera (Piernas / Axilas)">Depilación con cera (Piernas / Axilas)</option>
+                  <option value="Depilación facial (Bozo / Cejas)">Depilación facial (Bozo / Cejas)</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 0.5rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>Enviar Consulta por WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Dra. Nails</strong> — Manicura, Pedicura, Extensiones y Depilación con Cera.</p>
+      <p style="margin-top: 0.35rem;">Santa Cruz de la Sierra, Bolivia &bull; WhatsApp: +591 62662710</p>
+      <p style="margin-top: 0.75rem; font-size: 0.82rem;">&copy; <span id="current-year"></span> Dra. Nails. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE ACCESO INMEDIATO A WHATSAPP -->
+  <a href="https://wa.me/59162662710?text=Hola%20Dra.%20Nails%2C%20quisiera%20agendar%20una%20cita."
+     target="_blank"
+     rel="noopener noreferrer"
+     class="floating-wa"
+     aria-label="Chatear por WhatsApp con Dra. Nails">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script>
+    /* ==========================================================================
+       LÓGICA VANILLA JAVASCRIPT (SEGURIDAD OWASP DOM-XSS & INTERACTIVIDAD)
+       ========================================================================== */
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Año dinámico seguro mediante textContent
+      const yearEl = document.getElementById('current-year');
+      if (yearEl) {
+        yearEl.textContent = String(new Date().getFullYear());
+      }
+
+      // 2. Acordeón FAQ accesible con delegación de eventos
+      const faqContainer = document.getElementById('faq-accordion');
+      if (faqContainer) {
+        faqContainer.addEventListener('click', (event) => {
+          const btn = event.target.closest('.faq-btn');
+          if (!btn) return;
+
+          const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+          const panelId = btn.getAttribute('aria-controls');
+          const panel = panelId ? document.getElementById(panelId) : null;
+          const symbol = btn.querySelector('span[aria-hidden="true"]');
+
+          btn.setAttribute('aria-expanded', String(!isExpanded));
+          if (panel) {
+            panel.hidden = isExpanded;
+          }
+          if (symbol) {
+            symbol.textContent = isExpanded ? '+' : '−';
+          }
+        });
+      }
+
+      // 3. Generador seguro de enlace WhatsApp desde el formulario rápido
+      const bookingForm = document.getElementById('whatsapp-booking-form');
+      if (bookingForm) {
+        bookingForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+
+          const nameInput = document.getElementById('client-name');
+          const serviceSelect = document.getElementById('service-select');
+
+          // Sanitización básica de entrada de texto
+          const rawName = nameInput ? nameInput.value.trim().slice(0, 60) : '';
+          const selectedService = serviceSelect ? serviceSelect.value.trim() : 'un tratamiento';
+
+          const greeting = rawName
+            ? `Hola Dra. Nails, soy ${rawName}.`
+            : 'Hola Dra. Nails.';
+
+          const fullMessage = `${greeting} Me gustaría consultar disponibilidad y precios para: ${selectedService} en Santa Cruz.`;
+          const phone = '59162662710';
+          const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(fullMessage)}`;
+
+          // Validación estricta de protocolo https://wa.me/ antes de abrir
+          if (waUrl.startsWith('https://wa.me/')) {
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
